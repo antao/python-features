@@ -3,24 +3,24 @@
 
 # This is also called metaprogramming as a part of the program tries to modify another part of the program at compile time.
 
-# def chained_decorator(func):
+# def sprinkles(func):
 #     def inner():
-#         print("I chained decoreted object")
+#         print("Chain some sprinkles")
 #         func()
 #     return inner
 
-def decorator(func):
+def wrap(func):
     def inner():
-        print("I am a decoreted object")
+        print("I will wrap the " +  func.__name__)
         func()
     return inner
 
-# @decorator
-def my_function():
-    print("I am an object")
+# @wrap
+def gift():
+    print("I am the gift")
 
 if __name__ == '__main__':
-    my_function()
-    other_function = decorator(my_function)
-    other_function()
+    gift()
+    present = wrap(gift)
+    present()
     
