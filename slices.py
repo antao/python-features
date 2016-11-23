@@ -6,18 +6,15 @@ l = ['f', 'u', 'n', 'd', 'a']
 print(l[1:4]) 
 
 # Take all items except the last
-print(l[0:-1])
+# print(l[0:-1])
 
-# Reverse the list
-print(l[::-1])
+# # Reverse the list
+# print(l[::-1])
 
-# Copy all items of a list
-b = l[:]
-print(l)
-print(b)
-
-# Skip the last item 
-print(l[:-1])
+# # Copy all items of a list
+# b = l[:]
+# print(l)
+# print(b)
 
 # "One way to remember how slices work is to think of the indices as pointing between characters, with the left edge of the first character numbered 0."
 

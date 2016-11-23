@@ -5,6 +5,7 @@ if __name__ == '__main__':
     
     findall = re.findall("[force]at", sentence)
     print(findall)
+    
     # search = re.search("fat.*(animal|dog|zebra|cat)", sentence)
     
     # if search:
