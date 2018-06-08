@@ -9,5 +9,6 @@ def memoize(f):
 def square(x): 
     return (x ** 2)
 
-square = memoize(square)
-print(square(2))
+if __name__ == '__main__':
+    square = memoize(square)
+    print(square(2))

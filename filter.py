@@ -2,12 +2,11 @@
 # filter(aFunction, aSequence)
 
 if __name__ == '__main__':
-    items = range(-10,10)
-
     negatives = []
-    for x in items:
+    for x in range(-10,10):
         if x < 0:
             negatives.append(x)
     print(negatives)
 
-    # print(list(filter(lambda x: x < 0, items)))
+    # Using a filter
+    print(list(filter(lambda x: x < 0, range(-10,10))))
